@@ -4,37 +4,42 @@ title: "Resume"
 
 # Education
 
--   List your education here. 
+-   **Masters of Geomatics for Environmental Management**
+
+    Faculty of Forestry, University of British Columbia  \| April, 2025
+
+-   **Bachelor of Science in Marine Ecology**
+
+    College of the Environment, Western Washington University \| December, 2018
 
 # Publications
 
 *Peer-reviewed publications:*
 
-- List any peer-reviewed publications here.
+-   List any peer-reviewed publications here.
 
 *Reports:*
 
-- List any non-peer reviewed materials you'd like to share here.
+-   List any non-peer reviewed materials you'd like to share here.
 
 # Conferences & Talks
 
 *Invited Talks*
 
-- If you've been invited to speak in a professional setting, list that here. 
+-   If you've been invited to speak in a professional setting, list that here.
 
 *Conference Presentations*
 
-- If the presentation was at a conference, list them here. 
+-   If the presentation was at a conference, list them here.
 
 # Awards & Honors
 
-- List any scholarships, bursaries, etc. 
-
+-   List any scholarships, bursaries, etc.
 
 # Teaching Assistantships
 
-- List any TA positions you may have held. 
+-   List any TA positions you may have held.
 
 # Institutional Service
 
-- Volunteering etc. 
+-   Volunteering etc.

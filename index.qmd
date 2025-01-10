@@ -7,18 +7,20 @@ about:
   links: 
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/in/ramon-melser-666932129/
+      href: www.linkedin.com/in/eron-macartney-3a35071ba
     - icon: twitter
       text: Twitter/X
       href: https://x.com/MelserRamon
     - icon: github
       text: GitHub
-      href: https://github.com/ramonmelser
+      href: https://github.com/eronmac08
     - icon: envelope-at
       text: Email
-      href: mailto:melser@student.ubc.ca
+      href: mailto:eronmac08@gmail.com
 ---
 
-Hey there,
+Hello,
 
-This is your E-Portfolio landing page. Be sure to upload a professional headshot of yourself, and provide the appropriate links to your professional social media (linkedin, X/Twitter, etc). This is also a good place to provide a short summary of your education, career and interests. If you are associated with a lab or working with a research supervisor, it may be appropriate to provide some information on that here, along with links to relevant websites. 
+I am currently pursuing a Master’s degree in Geomatics for Environmental Management at the University of British Columbia in Vancouver, BC, Canada. I hold a B.Sc. in Environmental Science and Marine Biology from Western Washington University in Bellingham, WA.
+
+With my undergraduate background, I spent four years working on salmon stock assessments with both U.S. Fish and Wildlife and the Washington Department of Fish and Wildlife on the West Coast. Now, I am seeking to transition into a career that combines my expertise in geomatics with my strong foundation in biological sciences, focusing on GIS and its applications in environmental management.
