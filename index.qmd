@@ -1,5 +1,5 @@
 ---
-title: "Your E-Portfolio"
+title: "E-Portfolio"
 image: images/MGEM_logo.png
 about:
   template: trestles
@@ -7,10 +7,10 @@ about:
   links: 
     - icon: linkedin
       text: LinkedIn
-      href: www.linkedin.com/in/eron-macartney-3a35071ba
+      href: www.linkedin.com/in/eron-macartney
     - icon: twitter
       text: Twitter/X
-      href: https://x.com/MelserRamon
+      href: https://x.com/
     - icon: github
       text: GitHub
       href: https://github.com/eronmac08
