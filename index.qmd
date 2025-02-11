@@ -17,6 +17,11 @@ about:
     - icon: envelope-at
       text: Email
       href: mailto:eronmac08@gmail.com
+    - icon: phone
+      text: Phone
+      href: tel:+ 1-206-445-4396  # Replace with your actual phone number if you'd like to add it
+    
+---
 ---
 
 Hello,
