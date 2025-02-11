@@ -10,24 +10,9 @@ This is a sample page where you can archive project deliverables. Every header y
 
 If you've produced any GIS layers for your 599 project, this may be a good place to share them as interactive maps through leaflet. Alternatively, you can upload high-res figures showing correlations, box-plots, etc. from your report here, and provide a brief overview of key project results. If you have written some useful functions, you may also want to share those here to demonstrate proficiency in particular coding languages or synergies between notable coding packages.
 
-## Leaflet
+## Leafle
 
-Sample leaflet - for detailed leaflet instructions, visit the FCOR 599 workshop archive page [here](https://ubc-mgem-fcor599.github.io/FCOR-599-Workshops/Interactive_Maps/leaflet.html).
-
-```{r leaflet, include = FALSE}
-#| warning: false
-library(dplyr); library(leaflet)
-
-m <- leaflet() %>%
-  addProviderTiles("Esri.WorldImagery") %>%
-  addScaleBar(position = c("bottomleft")) %>%
-  setView(-123.1207, 49.2827, zoom = 11)
-
-```
-
-setwd("C:/Users/eron.stu/OneDrive - UBC/GEM521_Advanced_Earth_Observation_Image_Processing/GEM521_Labs/Lab5/Dalponte")
-
-work_dir = "C:/Users/eron.stu/OneDrive - UBC/GEM521_Advanced_Earth_Observation_Image_Processing/GEM521_Labs/Lab5/Dalponte"
+Individual tree segmentation derived from a LiDAR point cloud using the Dalponte et al. (2016) algorithm in R (Verion 4.3.2)
 
 ```{r map, echo=FALSE}
 #| warning: false
@@ -43,7 +28,7 @@ Plot_4 <- readLAS("C:/Users/eron.stu/OneDrive - UBC/GEM521_Advanced_Earth_Observ
 ######### Segmented Canopy Height Model (CHM) Plot 2 (multiple resolutions)
 
 # Set the resolution to 0.5
-resolution <- 0.5
+resolution <- 2
 
 # Generate the CHM for Plot 4 with the resolution 0.5
 CHM_Plot_4 <- rasterize_canopy(Plot_4, resolution, pitfree(
@@ -72,6 +57,10 @@ plot(Segment_trees_3D, color = "treeID")
 rgl::rglwidget()
 
 ```
+
+## Nahmint Watershed.
+
+![](images/Nahmint_Watershed.pdf){width="650" height="58"}
 
 ## Code Snippets
 
