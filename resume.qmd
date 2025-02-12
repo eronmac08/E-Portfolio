@@ -5,6 +5,4 @@ output:
     toc: true
 ---
 
-![](Resume/MGEM%20Tailored%20Resume.pdf){#resume style="width: 100%; height: 800px;"}
-
-------------------------------------------------------------------------
+![](Resume/MGEM%20Tailored%20Resume.pdf){style="width: 100%; height: 800px;"}
