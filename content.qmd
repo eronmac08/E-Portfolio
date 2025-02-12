@@ -60,7 +60,7 @@ rgl::rglwidget()
 
 ## Nahmint Watershed.
 
-![](images/Nahmint_Watershed.pdf){width="650" height="58"}
+![](images/Nahmint_Watershed.pdf){width="800" height="600"}
 
 ## Code Snippets
 
