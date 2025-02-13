@@ -1,0 +1,102 @@
+---
+title: "Content & Deliverables"
+format: html
+editor: visual
+---
+
+
+
+# Project 1 - Capstone Deliverables
+
+This is a sample page where you can archive project deliverables. Every header you use will correspond to a tab in the legend - shown on the right-hand side of your screen ("On this page").
+
+If you've produced any GIS layers for your 599 project, this may be a good place to share them as interactive maps through leaflet. Alternatively, you can upload high-res figures showing correlations, box-plots, etc. from your report here, and provide a brief overview of key project results. If you have written some useful functions, you may also want to share those here to demonstrate proficiency in particular coding languages or synergies between notable coding packages.
+
+## Leafle
+
+Individual tree segmentation derived from a LiDAR point cloud using the Dalponte et al. (2016) algorithm in R (Verion 4.3.2)
+
+
+
+```{r map, echo=FALSE}
+#| warning: false
+library(lidR)      # For LiDAR data processing
+library(terra)     # For raster-based spatial data processing
+library(tidyverse) # For data manipulation and visualization
+library(rgl) 
+
+
+Plot_4 <- readLAS("C:/Users/eron.stu/OneDrive - UBC/GEM521_Advanced_Earth_Observation_Image_Processing/GEM521_Labs/Lab5/Dalponte/Plots/Plot_4.las")
+
+
+######### Segmented Canopy Height Model (CHM) Plot 2 (multiple resolutions)
+
+# Set the resolution to 0.5
+resolution <- 2
+
+# Generate the CHM for Plot 4 with the resolution 0.5
+CHM_Plot_4 <- rasterize_canopy(Plot_4, resolution, pitfree(
+  thresholds = c(0, 10, 20, 30),  # Set height thresholds to differentiate canopy features
+  max_edge = c(0, 1),             # Set maximum edge size for smoothing
+  subcircle = 0.20))              # Use a subcircle size for smoothing
+
+
+# Locate trees for Plot 4 using the lmf method
+CHM_Plot_4_trees <- locate_trees(CHM_Plot_4, lmf(ws = 5, hmin = 2, shape = "circular"))
+
+
+# Perform tree segmentation in 3D using the Dalponte 2016 method
+Segment_trees_3D <- segment_trees(Plot_4, dalponte2016(
+  chm = CHM_Plot_4,              # Canopy Height Model (CHM)
+  treetops = CHM_Plot_4_trees,    # Tree locations (SpatialPoints)
+  th_tree = 2,                    # Tree height threshold (e.g., 2 meters)
+  th_seed = 0.45,                 # Seed growing threshold (e.g., 45% of tree height)
+  th_cr = 0.55,                   # Crown growing threshold (e.g., 55% of current tree height)
+  max_cr = 10,                    # Maximum crown radius (e.g., 10 pixels)
+  ID = "treeID"                   # Tree ID attribute, ensure it exists in your treetops data
+))
+
+# Plot the segmented trees in 3D, colored by tree ID
+plot(Segment_trees_3D, color = "treeID")
+rgl::rglwidget()
+
+```
+
+
+
+## Nahmint Watershed.
+
+![](images/Nahmint_Watershed.pdf){width="800" height="600"}
+
+## Code Snippets
+
+Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a 'tabset' in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let's showcase a function for calculating NDVI in R and Python.
+
+::: {.panel-tabset group="language"}
+## R
+
+``` (.r)
+calc_ndvi <- function(nir, red){ ndvi <- (nir-red)/(nir+red) return(ndvi) }
+```
+
+## Python
+
+``` (.python)
+def calc_ndvi(nir, red): 
+  ndvi = (nir.astype(float)-red.astype(float))/(nir.astype(float)+red.astype(float))
+  return(ndvi)
+```
+:::
+
+## External links
+
+You can also provide a frame linking to external websites. For example, here is a link to a Google Earth Engine application I developed. The full-screen GEE application is available [here](https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool) in case you're interested.
+
+(To use the GEE tool, navigate to any city you'd like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)
+
+
+
+```{=html}
+<iframe width="900" height="700" src="https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool" title="Webpage example"></iframe>
+```
+
