@@ -10,7 +10,7 @@ This is a sample page where you can archive project deliverables. Every header y
 
 If you've produced any GIS layers for your 599 project, this may be a good place to share them as interactive maps through leaflet. Alternatively, you can upload high-res figures showing correlations, box-plots, etc. from your report here, and provide a brief overview of key project results. If you have written some useful functions, you may also want to share those here to demonstrate proficiency in particular coding languages or synergies between notable coding packages.
 
-## Leafle
+## Leaflet
 
 Individual tree segmentation derived from a LiDAR point cloud using the Dalponte et al. (2016) algorithm in R (Verion 4.3.2)
 

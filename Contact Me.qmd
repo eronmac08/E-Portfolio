@@ -7,9 +7,9 @@ output: html_document
 If you have any questions or would like to discuss opportunities, feel free to reach out using the form below.
 
 ```{r, echo=FALSE}
-# HTML for the contact form
+# Contact form
 
-<form action="https://formspree.io/f/maykgnwa" method="POST">
+<form action="https://formspree.io/f/xkgovyod" method="POST">
   <label for="name">Your Name:</label><br>
   <input type="text" id="name" name="name" required><br><br>
 
@@ -21,4 +21,3 @@ If you have any questions or would like to discuss opportunities, feel free to r
 
   <input type="submit" value="Send Message">
 </form>
-
