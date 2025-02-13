@@ -10,10 +10,10 @@ website:
         text: Home
       - href: resume.qmd
         text: Resume
-      - href: publications.qmd
-        text: Publications
       - href: content.qmd
-        text: Content & Deliverables
+        text: Projects
+      - href: Contact Me.qmd
+        text: Contact Me
 
 format:
   html:
