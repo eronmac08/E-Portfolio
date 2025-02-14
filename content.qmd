@@ -58,9 +58,13 @@ rgl::rglwidget()
 
 ```
 
+## GIF TREEESSSSSS
+
+![](images/GIF_Trees.gif)
+
 ## Nahmint Watershed.
 
-![](images/Nahmint Watershep on Vancouver Island, B.C..jpg){width="741"}
+![](images/Nahmint%20Watershep%20on%20Vancouver%20Island,%20B.C..jpg){width="741"}
 
 ## Code Snippets
 
@@ -84,11 +88,11 @@ def calc_ndvi(nir, red):
 
 ## Least Cost Analysis
 
-![](images/Least Cost Analysis E-Portfolio.jpg){width="773"}
+![](images/Least%20Cost%20Analysis%20E-Portfolio.jpg){width="773"}
 
 ## Recommended Whale Sanctuary
 
-![](images/Whale Sanctuary Layout.jpg)
+![](images/Whale%20Sanctuary%20Layout.jpg)
 
 ## External links
 
