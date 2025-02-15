@@ -72,7 +72,7 @@ rgl::rglwidget()
 
 ```
 
-## GIF TREEESSSSSS
+## Canopy Height Models
 
 ![](images/GIF_Trees.gif)
 
