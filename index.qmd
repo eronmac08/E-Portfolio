@@ -8,19 +8,11 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/eron-macartney
-    - icon: twitter
-      text: Twitter/X
-      href: https://x.com/
     - icon: github
       text: GitHub
       href: https://github.com/eronmac08
     - icon: envelope-at
       text: Email
-      href: mailto:eronmac08@gmail.com
-    - icon: phone
-      text: Phone
-      href: tel:+ 1-206-445-4396  # Replace with your actual phone number if you'd like to add it
-    
 ---
 ---
 # About Me

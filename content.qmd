@@ -4,9 +4,29 @@ format: html
 editor: visual
 ---
 
-## Dalponte 3D Map
+# Projects
 
-Individual tree segmentation derived from a LiDAR point cloud using the Dalponte et al. (2016) algorithm in R (Verion 4.3.2)
+## Tree Segmentation.
+
+Project: LiDAR-Based Individual Tree Segmentation
+
+In this project, I used LiDAR data to segment individual trees from a random plot within a forest. The goal was to apply point cloud and Canopy Height Model (CHM)-based methods for tree detection and segmentation. The process involved extracting a plot, filtering outliers, normalizing the data, and performing tree segmentation using algorithms like `li2012` and `dalponte2016`.
+
+Skills & Tools Used:
+
+-   **R Programming:** Utilized R for data manipulation, analysis, and visualization.
+
+-   **LiDAR Processing:** Used the `lidR` package to load, filter, and normalize LiDAR data, removing outliers and correcting for ground elevation.
+
+-   **Tree Segmentation:** Applied the `li2012` algorithm on the point cloud data for tree segmentation and used the `dalponte2016` algorithm on CHM data to detect tree tops and segment individual trees.
+
+-   **Visualization:** Created 3D visualizations of segmented trees using the `rgl` package and compared results from both methods.
+
+-   **Raster Analysis:** Generated Canopy Height Models (CHM) at 0.5m resolution using `terra` to improve segmentation accuracy.
+
+Results:
+
+The segmentation results showed that both methods identified individual trees with high accuracy. The `li2012` algorithm effectively segmented trees based on the point cloud, while the `dalponte2016` method produced accurate tree crown delineation using the CHM. The visualizations confirmed that tree segmentation was successful, providing clear distinctions between individual trees.
 
 ```{r map, echo=FALSE}
 #| warning: false
@@ -58,6 +78,26 @@ rgl::rglwidget()
 
 ## Nahmint Watershed.
 
+### **Project: Terrain Analysis and Riparian Area Management in British Columbia**
+
+In this project, I modeled riparian forest management within the Nahmint watershed, British Columbia, using a Digital Elevation Model (DEM) to define riparian reserve zones and management areas. The objective was to apply best management practices (BMPs) for forest managers to designate non-harvestable and harvestable zones near stream networks, assessing stream networks and classifying streams to inform land management decisions.
+
+#### **Skills & Tools Used:**
+
+-   **ArcGIS Pro & QGIS**: Proficiently used both platforms to analyze DEMs, calculate flow direction, stream order, and derive hydrological insights using raster and vector tools.
+
+-   **Hydrological Modeling**: Employed tools like “Flow Direction,” “Flow Accumulation,” and “Watershed” to identify stream networks and delineate watersheds, using thresholds to select relevant streams.
+
+-   **Stream Classification**: Applied the Strahler and Shreve stream ordering methods to classify streams by their complexity and tributary structure, helping define riparian zones.
+
+-   **Python Scripting**: Used Python to automate field calculations for stream width, gradient, and buffer distances for riparian zone classification.
+
+-   **Buffer Analysis**: Created buffer zones around stream networks for Riparian Management Areas (RMAs), ensuring protection through customized reserve and management zone buffer distances.
+
+#### **Results:**
+
+The project identified key areas for Riparian Reserve Zones (RRMZ) and Riparian Management Zones (RMMZ) by analyzing stream class, gradient, and width. The analysis revealed areas with varying levels of protection, emphasizing the importance of buffer zones around fish-bearing streams. The results showed that stream networks in the Nahmint watershed were well classified, with over 80% of streams being fish-bearing and requiring buffer zones that varied from 10m to 100m depending on stream class.
+
 ![](images/Nahmint%20Watershep%20on%20Vancouver%20Island,%20B.C..jpg){width="741"}
 
 ## Code Snippets
@@ -82,8 +122,52 @@ def calc_ndvi(nir, red):
 
 ## Least Cost Analysis
 
+### **Grizzly Bear Movement Modeling**
+
+In this project, I conducted a Least Cost Path (LCP) analysis to model Grizzly Bear movement across the Yellowhead region, using various environmental and human factors to assess movement costs. The goal was to identify the most efficient route between two points in the landscape.
+
+#### **Skills & Tools Used:**
+
+-   **QGIS & ArcGIS Pro**: Utilized both QGIS for raster manipulation and ArcGIS Pro for the final LCP analysis, showcasing proficiency in both platforms.
+
+-   **Raster Analysis**: Used tools like "Slope," "Reclassify," and "Raster Calculator" in QGIS to derive cost surfaces based on slope, land cover, and road proximity.
+
+-   **Reclassification & Weighting**: Reclassified land cover data to assign resistance values and weighted layers to combine them into a unified cost surface.
+
+-   **Proximity Analysis**: Created distance-to-roads rasters and applied cost models to factor in human infrastructure's impact on bear movement.
+
+-   **Least Cost Path Analysis**: Applied the "Distance Accumulation" and "Optimal Path as Line" tools in ArcGIS Pro to trace the most efficient path, integrating all cost factors.
+
+#### **Results:**
+
+The least cost path model revealed that Grizzly Bears would most likely avoid steep slopes and areas with high human infrastructure, favoring routes through forested and wetland areas. The weighted cost surface emphasized the avoidance of roads and areas with high land cover resistance, resulting in paths that were longer but more likely to offer safer movement corridors. This model can be used to inform conservation strategies and guide habitat protection efforts.
+
 ![](images/Least%20Cost%20Analysis%20E-Portfolio.jpg){width="773"}
 
 ## Recommended Whale Sanctuary
+
+### Project Overview:
+
+This GIS project focuses on conducting a **suitability and overlay analysis** to identify the best areas for expanding a humpback whale sanctuary in Hawaii. The goal is to find locations that balance the whales’ habitat needs with minimizing human impacts, particularly from vessel traffic.
+
+#### Tools and Skills Used:
+
+-   **ArcGIS Pro**: Utilized for geospatial data analysis, including raster calculations, spatial analysis, and map production.
+
+-   **Spatial Analyst Tools**: Used for overlay analysis to determine suitable locations based on environmental and human impact factors.
+
+-   **ModelBuilder**: Employed to create an automated workflow for the analysis process, improving efficiency and ensuring reproducibility.
+
+-   **Geodatabase**: Managed and organized the datasets, including Humpback_BIA and Humpback_Hawaii_BIA, ensuring proper data structures and cleaning unnecessary fields.
+
+-   **Symbology and Cartography**: Applied to visually represent the analysis results clearly and effectively in the final map and report.
+
+#### Results:
+
+-   **Top 5 Suitable Areas**: The analysis identified the best five locations for expanding the whale sanctuary based on habitat suitability and minimizing human interference from vessel traffic.
+
+-   **Humpback Whale Habitat Suitability**: A detailed suitability map was created, combining various environmental factors and human impact data to highlight optimal sanctuary zones.
+
+-   **Final Map and Report**: The final map clearly displayed the most suitable areas for the sanctuary expansion, and the report summarized the analysis steps, methodology, and the rationale for the selected areas.
 
 ![](images/Whale%20Sanctuary%20Layout.jpg)
