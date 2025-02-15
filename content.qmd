@@ -28,6 +28,8 @@ Results:
 
 The segmentation results showed that both methods identified individual trees with high accuracy. The `li2012` algorithm effectively segmented trees based on the point cloud, while the `dalponte2016` method produced accurate tree crown delineation using the CHM. The visualizations confirmed that tree segmentation was successful, providing clear distinctions between individual trees.
 
+### Dalponte Tree Segmentation
+
 ```{r map, echo=FALSE}
 #| warning: false
 library(lidR)      # For LiDAR data processing
@@ -72,7 +74,7 @@ rgl::rglwidget()
 
 ```
 
-## Canopy Height Models
+### Canopy Height Models
 
 ![](images/GIF_Trees.gif)
 
