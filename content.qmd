@@ -6,7 +6,7 @@ editor: visual
 
 # Projects
 
-## Tree Segmentation.
+## Tree Segmentation 
 
 Project: LiDAR-Based Individual Tree Segmentation
 
@@ -99,26 +99,6 @@ In this project, I modeled riparian forest management within the Nahmint watersh
 The project identified key areas for Riparian Reserve Zones (RRMZ) and Riparian Management Zones (RMMZ) by analyzing stream class, gradient, and width. The analysis revealed areas with varying levels of protection, emphasizing the importance of buffer zones around fish-bearing streams. The results showed that stream networks in the Nahmint watershed were well classified, with over 80% of streams being fish-bearing and requiring buffer zones that varied from 10m to 100m depending on stream class.
 
 ![](images/Nahmint%20Watershep%20on%20Vancouver%20Island,%20B.C..jpg){width="741"}
-
-## Code Snippets
-
-Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a 'tabset' in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let's showcase a function for calculating NDVI in R and Python.
-
-::: {.panel-tabset group="language"}
-## R
-
-``` (.r)
-calc_ndvi <- function(nir, red){ ndvi <- (nir-red)/(nir+red) return(ndvi) }
-```
-
-## Python
-
-``` (.python)
-def calc_ndvi(nir, red): 
-  ndvi = (nir.astype(float)-red.astype(float))/(nir.astype(float)+red.astype(float))
-  return(ndvi)
-```
-:::
 
 ## Least Cost Analysis
 
