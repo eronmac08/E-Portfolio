@@ -12,11 +12,10 @@ website:
         text: Resume
       - href: content.qmd
         text: Projects
-      - href: Contact Me.qmd
-        text: Contact Me
       - href: Personal Life.qmd
         text: Personal Life
-
+      - href: Contact Me.qmd
+        text: Contact Me
 format:
   html:
     theme: flatly
