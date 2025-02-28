@@ -14,6 +14,8 @@ website:
         text: Projects
       - href: Contact Me.qmd
         text: Contact Me
+      - href: Personal Life.qmd
+        text: Personal Life
 
 format:
   html:

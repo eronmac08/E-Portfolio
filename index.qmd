@@ -2,8 +2,9 @@
 title: "Welcome to My Geomatics Portfolio"
 image: images/Profile Picture.jpg
 about:
-  template: trestles
-  image-width: 20em
+  template: jolla
+  image-width: 25em
+  image-shape: rounded
   links: 
     - icon: linkedin
       text: LinkedIn
@@ -14,12 +15,14 @@ about:
     - icon: envelope-at
       text: Email
 ---
----
+
+------------------------------------------------------------------------
+
 # About Me
 
 Hello,
 
-I am a Master’s student in Geomatics for Environmental Management at the University of British Columbia (UBC) in Vancouver, BC, Canada, with an expected graduation date of April 5th, 2025. I also hold a B.Sc. in Environmental Science with a focus on Marine Ecology from Western Washington University in Bellingham, WA.
+I am a current Master’s student in Geomatics for Environmental Management at the University of British Columbia (UBC) in Vancouver, BC, Canada, with an expected graduation date of April 5th, 2025. I also hold a B.Sc. in Environmental Science with a focus on Marine Ecology from Western Washington University in Bellingham, WA.
 
 After my undergraduate studies, I spent four years contributing to salmon stock assessments through collaborations with both U.S. Fish and Wildlife and the Washington Department of Fish and Wildlife on the West Coast of Washington State. This hands-on experience helped me build a strong foundation in geospatial analysis, biological sciences and environmental research.
 
@@ -27,9 +30,12 @@ Currently, I am eager to transition into a career that blends my geomatics exper
 
 # Skills
 
-- Procient in GIS software: ArcGIS Pro, QGIS
-- Programming languages: Python, R
-- Spatial data analysis and manipulation
-- Remote sensing and cartographic design
-- Database management: SQL, Microsoft Acces
+Proficient in GIS software: ArcGIS Pro, QGIS
 
+Programming languages: Python, R
+
+Spatial data analysis and manipulation
+
+Remote sensing and cartographic design
+
+Database management: SQL, Microsoft Access
