@@ -18,7 +18,7 @@ website:
         text: Contact Me
 format:
   html:
-    theme: flatly
+    theme: vapor
     css: styles.css
     toc: true
 
