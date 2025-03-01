@@ -18,7 +18,7 @@ website:
         text: Contact Me
 format:
   html:
-    theme: vapor
+    theme: solar
     css: styles.css
     toc: true
 
